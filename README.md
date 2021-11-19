@@ -1,8 +1,7 @@
 # Exercicios-JS
-<<<<<<< HEAD
- 
-=======
+
 Esse comite é sobre uma série de exercícios JAVASCRIPT do site ( JAVASCRIPT Progressivo ). Onde serão abordados exercícios de  (Introdução ao Js), (Condicionais), (Laços e Loops), (Função) e (Arreys).
 
--As questões estão no inicio dentro de cada arquivo 
+
 - Link do site das questões ( https://www.javascriptprogressivo.net/)
+- As questões estão também dentro de cada FILE
