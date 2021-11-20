@@ -19,6 +19,7 @@ console.log(p);
 
 function area(r){
     return Math.PI * (r*r);
+    //Math.PI é um objeto que retorna ( PI )
 }
 //A função retorna a formula da area do circulo
 function perimetro(r){
