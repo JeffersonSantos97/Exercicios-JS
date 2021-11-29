@@ -4,13 +4,18 @@ deverá usar graus Fahrenheit.
 Ou seja, você fornece a temperatura em graus Celsius, e seu script JS faz 
  a conversão para graus Fahrenheit*/ 
 
-const celsius = prompt("Digite quantos graus Celsius está fazendo");
+let celsius = document.getElementById("celsius");
 
- function Fahrenheit(c){
-     return (9/5) * c + 32
+let r = document.querySelector("#resposta");
+let buttonC = document.querySelector("#buttonClick") 
+
+ function Fahrenheit(){
+    let c = parseInt(celsius.value); 
+    r.innerHTML = ((9/5) * c + 32) + " Fahrenheit";
  }
- const f = Fahrenheit(celsius);
- console.log(f);
+ buttonC.addEventListener("click",Fahrenheit);
+
+ 
 
  //Esse exercício não tem muito mistério. 
  //Joguei a formula que transforma Celsius em Fahrenheit na função 

@@ -5,6 +5,7 @@ let raio = document.querySelector("#raio");
  //Raio com o valor inteiro 
 let rPerimetro = document.querySelector("#perimetro");
 let rArea = document.querySelector("#area");
+let buttonClick = document.querySelector("#buttonClick");
 
 //Usei o prompt pra abrir a uma janela no navegador
 
@@ -28,3 +29,5 @@ function pAndA(){
     area();
     perimetro();
 }
+
+buttonClick.addEventListener("click",pAndA);
