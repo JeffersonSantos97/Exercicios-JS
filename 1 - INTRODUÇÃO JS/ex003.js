@@ -7,19 +7,21 @@ e em seguida diga quantos litros de combustível ele pode comprar e quantos
 kilometros o carro consegue andar com este tanto de combustível.
 */ 
 
-const din = prompt ("Quanto de dinheiro você tem ? ");
-const litros = comprar(din);
-const distancia = andar(litros);
-console.log( `Litros: ${litros} `);
-console.log(`distancia: ${distancia}km`);
-
-function comprar(d){
-    return d / 5; 
+let dinheiro = document.getElementById("din");
+let l = document.getElementById("litros");
+let dis = document.getElementById("distancia");
+let buttonClick = document.getElementById("buttonClick");
+function litros(){
+    var d = parseFloat(dinheiro.value);
+    l.innerHTML = (d / 5) + " litros";
 }
-// Criei uma função pra descobrir quantos de litros eu consigo comprar 
 
-
-function andar(l){
-    return 20 * l;
+function distancia(){
+    var d = parseFloat(dinheiro.value);
+    dis.innerHTML = 20 * ( d / 5) + " KM";
 }
-//Depois que eu descubro quantos litros eu tenho, eu sei quantos km eu consigo andar com os litros
+function lAndD(){
+    litros();
+    distancia();
+}
+buttonClick.addEventListener("click",lAndD);
